@@ -17,7 +17,7 @@ The `auto_commit` job runs on the `ubuntu-latest` virtual machine and has write 
 
 ## Schedule
 
-This workflow is triggered on a schedule using a cron expression that runs every day at midnight UTC (`0 0 * * 0,1,3,4,6`), except for Tuesdays and Fridays. The schedule can be adjusted by modifying the `cron` expression in the workflow file.
+This workflow is triggered on a schedule using a cron expression `30 5 * * 1,3,6` that runs at 05:30 (UTC), only on Monday, Wednesday, and Saturday. The schedule can be adjusted by modifying the `cron` expression in the workflow file.
 
 ## Manual Trigger
 
